@@ -14,12 +14,12 @@ local placeIds = {
 -- Wait till game loaded
 repeat wait() until game:IsLoaded()
 
--- Handle placeid
+-- Handle place
 local placeId = game.PlaceId
 if placeId == placeIds["Greenville"] then
     
-    --loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenvant/XenHub/main/Games/GV.lua"))()
-    player:Kick("[XenHub] - Greenville script disabled!")
+    -- Load greenville script
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenvant/XenHub/main/Games/Greenville.lua"))()
 
 elseif placeId == placeIds["Demonfall-Main"] then
     
