@@ -19,7 +19,7 @@ local placeId = game.PlaceId
 if placeId == placeIds["Greenville"] then
     
     -- Load greenville script
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenvant/XenHub/main/Games/Greenville.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XenHubORG/XenHub/main/Games/Greenville.lua"))()
 
 elseif placeId == placeIds["Demonfall-Main"] then
     
@@ -29,6 +29,6 @@ elseif placeId == placeIds["Demonfall-Main"] then
 elseif placeId == placeIds["Demonfall-Server"] then
     
     -- Load demonfall script
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenvant/XenHub/main/Games/Demonfall.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XenHubORG/XenHub/main/Games/Demonfall.lua"))()
 
 end
