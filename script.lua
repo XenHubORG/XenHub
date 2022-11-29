@@ -1,34 +1,18 @@
--- Services
-local TeleportService = game:GetService("TeleportService")
-
--- Constants
-local player = game.Players.LocalPlayer
+-- XenHub ~ By Xenvant#0001
 
 -- Configuration
 local placeIds = {
-    ["Greenville"] = 891852901,
-    ["Demonfall-Main"] = 4855457388,
-    ["Demonfall-Server"] = 5094651510
+    ["Grand Piece Online - Battle Royale Lobby"] = 11424731604
 }
 
 -- Wait till game loaded
-repeat wait() until game:IsLoaded()
+repeat task.wait() until game:IsLoaded()
 
 -- Handle place
 local placeId = game.PlaceId
-if placeId == placeIds["Greenville"] then
+if placeId == placeIds["Grand Piece Online - Battle Royale Lobby"] then
     
-    -- Load greenville script
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XenHubORG/XenHub/main/Games/Greenville.lua"))()
-
-elseif placeId == placeIds["Demonfall-Main"] then
-    
-    -- Teleport to server
-    TeleportService:Teleport(5094651510, player)
-
-elseif placeId == placeIds["Demonfall-Server"] then
-    
-    -- Load demonfall script
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XenHubORG/XenHub/main/Games/Demonfall.lua"))()
+    -- Load Grand Piece Online Script
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XenHubORG/XenHub/main/Games/GrandPieceOnline.lua"))()
 
 end
